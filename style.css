@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #3698e3;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+body {
+  background-image: url("img/clouds.jpeg");
+  color: #fff;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.heading {
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  border: 0.5px solid #fff;
+  border-radius: 10px;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+#searchText {
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 100%;
+  margin-right: 1rem;
+  border: none;
+  color: var(--primary-color);
+}
+
+#searchText:focus {
+  outline: none;
+}
+
+#searchButton {
+  padding: 0 2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+#searchButton:focus {
+  outline: none;
+}
+
+#inputText:focus {
+  outline: none;
+}
+
+#weather-form {
+  padding: 1rem 0 0 0;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.form:focus {
+  outline: none;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+
+.output {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.fa-cloud-sun {
+  padding: 1rem;
+}
+
+.info {
+  float: right;
+  font-size: small;
+}
+
+.form-item {
+  padding: 0.2rem;
+}
+
+@media (max-width: 500px) {
+  .container {
+    margin: 1rem;
+    padding-top: 1rem;
+  }
+
+  #searchButton {
+    padding: 0.5rem 1rem;
+  }
+
+  #searchText {
+    margin: 1rem 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  ::placeholder {
+    opacity: 0.5;
+  }
+
+  #output {
+    flex-direction: column;
+  }
+};
