@@ -99,8 +99,19 @@ padding : 0.2rem 0;
   padding: 1.5rem 0;
 }
 
-.fa-cloud-sun {
-  padding: 1rem;
+.fa-sun {
+  color: rgb(248, 248, 100);
+  position: absolute;
+}
+
+.fa-cloud {
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+
+.logo {
+padding: 1rem;
 }
 
 .info {
