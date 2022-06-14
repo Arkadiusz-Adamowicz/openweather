@@ -25,7 +25,7 @@ button.addEventListener("click", () => {
     desc.innerHTML = `description: ${descValue}`;
     desc.style.border = '1px solid #fff';
     desc.style.borderBottom = 'none';
-    temp.innerHTML = `temp: ${tempValue / 2} K`;
+    temp.innerHTML = `temp: ${tempValue} K`;
     temp.style.border = '1px solid #fff';
     temp.style.borderBottom = 'none';
     wind.innerHTML = `wind speed: ${windValue}`;
@@ -35,7 +35,6 @@ button.addEventListener("click", () => {
     pressure.style.border = '1px solid #fff';
     pressure.style.borderBottomLeftRadius = '5px';
     pressure.style.borderBottomRightRadius = '5px';
-
 
     console.log(data);
   })
