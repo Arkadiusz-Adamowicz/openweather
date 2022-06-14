@@ -18,23 +18,14 @@ button.addEventListener("click", () => {
     const pressureValue = data['main']['pressure'];
 
     name.innerHTML = nameValue;
-    name.style.background = '#fff';
-    name.style.color = 'var(--primary-color)';
-    name.style.borderTopLeftRadius = '5px';
-    name.style.borderTopRightRadius = '5px';
     desc.innerHTML = `description: ${descValue}`;
-    desc.style.border = '1px solid #fff';
-    desc.style.borderBottom = 'none';
+    desc.classList.add('border_bottom');
     temp.innerHTML = `temp: ${tempValue} K`;
-    temp.style.border = '1px solid #fff';
-    temp.style.borderBottom = 'none';
+    temp.classList.add('border_bottom');
     wind.innerHTML = `wind speed: ${windValue}`;
-    wind.style.border = '1px solid #fff';
-    wind.style.borderBottom = 'none';
+    wind.classList.add('border_bottom');
     pressure.innerHTML = `pressure: ${pressureValue} hPa`;
-    pressure.style.border = '1px solid #fff';
-    pressure.style.borderBottomLeftRadius = '5px';
-    pressure.style.borderBottomRightRadius = '5px';
+    pressure.classList.add('border_bottom');
 
     console.log(data);
   })
