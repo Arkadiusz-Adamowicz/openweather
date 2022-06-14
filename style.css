@@ -90,10 +90,8 @@ body {
 }
 
 .output {
-  /* display: flex;
-  justify-content: space-evenly; */
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem 0;
 }
 
 .fa-cloud-sun {
@@ -104,6 +102,7 @@ body {
   float: right;
   font-size: small;
 }
+
 
 .form-item {
   padding: 0.2rem;
