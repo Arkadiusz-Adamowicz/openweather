@@ -4,7 +4,6 @@
 
 Responsive application displays weather of the city from [Openweather](https://openweathermap.org/) website with APIkey. 
 
-<img width="534" alt="screen" src="https://user-images.githubusercontent.com/90817546/173491166-05409d58-1248-458e-94de-fdd578871d5a.png">
+ <img width="474" alt="screen" src="https://user-images.githubusercontent.com/90817546/173494238-ae09a595-8548-4fce-99aa-1e24f67ee7e6.png">
 
- 
 
