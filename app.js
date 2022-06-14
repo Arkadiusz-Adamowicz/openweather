@@ -16,15 +16,27 @@ button.addEventListener("click", () => {
     const windValue = data['wind']['speed'];
 
     name.innerHTML = nameValue;
+    name.style.background = '#fff';
+    name.style.color = 'var(--primary-color)';
+    name.style.borderTopLeftRadius = '5px';
+    name.style.borderTopRightRadius = '5px';
     desc.innerHTML = `description: ${descValue}`;
+    desc.style.border = '1px solid #fff';
+    desc.style.borderBottom = 'none';
     temp.innerHTML = `temp: ${tempValue}`;
+    temp.style.border = '1px solid #fff';
+    temp.style.borderBottom = 'none';
     wind.innerHTML = `wind speed: ${windValue}`;
+    wind.style.border = '1px solid #fff';
+    wind.style.borderBottomLeftRadius = '5px';
+    wind.style.borderBottomRightRadius = '5px';
 
     console.log(data);
   })
 
   .catch(err => alert('Something went wrong...'));
 });
+
 
 
 
