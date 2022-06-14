@@ -40,7 +40,7 @@ button.addEventListener("click", () => {
     console.log(data);
   })
 
-  .catch(err => alert('Something went wrong...'));
+  .catch(err => alert('Something went wrong'));
 });
 
 
