@@ -5,6 +5,7 @@ const name = document.querySelector('#name');
 const desc = document.querySelector('#desc');
 const temp = document.querySelector('#temp');
 const wind = document.querySelector('#wind');
+const pressure = document.querySelector('#pressure');
 
 button.addEventListener("click", () => {
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=6747fce384ac05724f4312453dd1dd48`)
@@ -14,6 +15,7 @@ button.addEventListener("click", () => {
     const descValue = data['weather'][0]['description'];
     const tempValue = data['main']['temp'];
     const windValue = data['wind']['speed'];
+    const pressureValue = data['main']['pressure'];
 
     name.innerHTML = nameValue;
     name.style.background = '#fff';
@@ -28,8 +30,12 @@ button.addEventListener("click", () => {
     temp.style.borderBottom = 'none';
     wind.innerHTML = `wind speed: ${windValue}`;
     wind.style.border = '1px solid #fff';
-    wind.style.borderBottomLeftRadius = '5px';
-    wind.style.borderBottomRightRadius = '5px';
+    wind.style.borderBottom = 'none';
+    pressure.innerHTML = `pressure: ${pressureValue}`;
+    pressure.style.border = '1px solid #fff';
+    pressure.style.borderBottomLeftRadius = '5px';
+    pressure.style.borderBottomRightRadius = '5px';
+
 
     console.log(data);
   })
