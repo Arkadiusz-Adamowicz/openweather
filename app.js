@@ -27,9 +27,8 @@ button.addEventListener("click", () => {
     pressure.innerHTML = `pressure: ${pressureValue} hPa`;
     pressure.classList.add('border_bottom');
 
-    console.log(data);
+    input.value = '';
   })
-
   .catch(err => alert('Something went wrong'));
 });
 
