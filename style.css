@@ -45,6 +45,7 @@ p {
 #searchText {
   padding: 0.5rem;
   border-radius: 5px;
+  font-size: 1rem;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -94,11 +95,15 @@ p {
 
 ::placeholder {
   opacity: 0.5;
+  font-size: 0.9rem;
 }
 
 .output {
   align-items: center;
-  padding: 1.5rem 0;
+}
+
+.outputPD {
+  padding: 1rem 0;
 }
 
 .fa-sun {
@@ -108,8 +113,8 @@ p {
 
 .fa-cloud {
   position: relative;
-  left: 20px;
-  top: 10px;
+  left: 30px;
+  top: 20px;
 }
 
 .logo {
@@ -128,8 +133,20 @@ p {
   margin-bottom: 0.5rem;
 }
 
+.namePD {
+  padding: 0.2rem;
+}
+
 #searchButton {
-font-size: 1rem;
+  font-size: 1rem;
+  transition: 0.2s ease;
+  border: 1px solid transparent;
+}
+
+#searchButton:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
 }
 
 .border_bottom {
@@ -144,7 +161,7 @@ font-size: 1rem;
   }
 
   #searchButton {
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 1rem;
   }
 
   #searchText {
@@ -158,4 +175,4 @@ font-size: 1rem;
   ::placeholder {
     opacity: 0.5;
   }
-};
+} ;

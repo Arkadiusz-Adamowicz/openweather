@@ -11,13 +11,16 @@ button.addEventListener("click", () => {
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=6747fce384ac05724f4312453dd1dd48`)
   .then(response => response.json())
   .then(data => {
+
     const nameValue = data.name;
     const descValue = data.weather[0].description;
     const tempValue = data.main.temp;
     const windValue = data.wind.speed;
     const pressureValue = data.main.pressure;
 
+    output.classList.add('outputPD');
     name.innerHTML = nameValue;
+    name.classList.add('namePD');
     desc.innerHTML = `description: ${descValue}`;
     desc.classList.add('border_bottom');
     temp.innerHTML = `temp: ${tempValue} K`;
