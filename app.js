@@ -15,6 +15,8 @@ button.addEventListener("click", () => {
     const nameValue = data.name;
     const descValue = data.weather[0].description;
     const tempValue = data.main.temp;
+    const tempValueResult = tempValue - 273.15;
+    const tempValueC = Math.floor(tempValueResult);
     const windValue = data.wind.speed;
     const pressureValue = data.main.pressure;
 
@@ -23,16 +25,18 @@ button.addEventListener("click", () => {
     name.classList.add('namePD');
     desc.innerHTML = `description: ${descValue}`;
     desc.classList.add('border_bottom');
-    temp.innerHTML = `temp: ${tempValue} K`;
+    temp.innerHTML = `temp: ${tempValueC} C`;
     temp.classList.add('border_bottom');
-    wind.innerHTML = `wind speed: ${windValue}`;
+    wind.innerHTML = `wind speed: ${windValue} km/s`;
     wind.classList.add('border_bottom');
     pressure.innerHTML = `pressure: ${pressureValue} hPa`;
     pressure.classList.add('border_bottom');
 
     input.value = '';
   })
+  // .catch(err => alert('Something went wrong'));
   .catch(err => alert('Something went wrong'));
+  input.value = '';
 });
 
 
