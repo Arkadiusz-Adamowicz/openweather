@@ -27,7 +27,7 @@ button.addEventListener("click", () => {
     desc.classList.add('border_bottom');
     temp.innerHTML = `temp: ${tempValueC} C`;
     temp.classList.add('border_bottom');
-    wind.innerHTML = `wind speed: ${windValue} km/s`;
+    wind.innerHTML = `wind speed: ${windValue} m/s`;
     wind.classList.add('border_bottom');
     pressure.innerHTML = `pressure: ${pressureValue} hPa`;
     pressure.classList.add('border_bottom');
